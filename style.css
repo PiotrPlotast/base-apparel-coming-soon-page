@@ -106,7 +106,6 @@ body {
 .logo {
     width: 100px;
     margin: 1rem 1rem;
-    display: block;
     padding: 1rem 0;
 }
 
@@ -115,6 +114,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .hero__title {
@@ -147,6 +154,7 @@ body {
     align-items: center;
     width: 90%;
     position: relative;
+    margin-bottom: 3rem;
 }
 
 .email {
@@ -178,4 +186,23 @@ body {
 
 .error {
     display: none;
+}
+
+@media (min-width: 700px) {
+    .logo {
+        position: absolute;
+        width: 170px;
+        margin: 3rem 8rem;
+        padding: 1rem 0;
+    }
+
+    .hero {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .text-wrapper {
+        width: 50%;
+    }
+
 }

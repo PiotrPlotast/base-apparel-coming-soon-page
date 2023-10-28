@@ -137,4 +137,44 @@ body {
     text-align: center;
     max-width: 35ch;
     color: hsl(0, 36%, 70%);
+    margin-bottom: 2rem;
+}
+
+.hero__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: relative;
+}
+
+.email {
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 50px;
+    padding: 0.9rem 1rem;
+    background-color: transparent;
+    color: hsl(0, 36%, 70%);
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.email::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+.email:focus {
+    outline: none;
+}
+
+.submit-btn {
+    position: absolute;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
+    border: none;
+    padding: 1rem 1.8rem;
+    border-radius: 50px;
+    right: 0;
+}
+
+.error {
+    display: none;
 }

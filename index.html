@@ -14,13 +14,14 @@
 <body>
   <main>
     <img src="./images/logo.svg" alt="Base Apparel logo" class="logo">
-    <picture>
-      <source media="(min-width: 1440px)" srcset="./images/hero-desktop.jpg">
-      <img src="./images/hero-mobile.jpg" alt="hero image">
-    </picture>
     <div class="hero">
-      <h1>We're coming soon</h1>
-      <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date
+      <picture class="hero__img">
+        <source media="(min-width: 1440px)" srcset="./images/hero-desktop.jpg">
+        <img src="./images/hero-mobile.jpg" alt="hero image">
+      </picture>
+      <h1 class="hero__title"><span class="hero__title--span">We're</span> coming soon</h1>
+      <p class="hero__text">Hello fellow shoppers! We're currently building our new fashion store. Add your email below
+        to stay up-to-date
         with announcements and our launch deals.</p>
       <form action="">
         <input type="email" placeholder="Email Address">

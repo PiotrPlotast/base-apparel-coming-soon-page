@@ -10,11 +10,14 @@ submitButton.addEventListener('click', function (event) {
     // TODO - ad error icon and message
     if (!emailRegex.test(email)) {
         emailInput.style.borderColor = 'hsl(0, 93%, 68%)';
+        emailInput.style.borderWidth = '2px';
         emailInput.style.color = 'hsl(0, 93%, 68%)';
-        // emailInput.style.backgroundImage = 'url(images/icon-error.svg) no-repeat 50% 50%';
+        emailInput.style.backgroundImage = 'url(images/icon-error.svg)';
+        emailInput.style.backgroundRepeat = 'no-repeat';
+        emailInput.style.backgroundPosition = 'right 120px center';
     } else {
         emailInput.style.borderColor = '';
         emailInput.style.color = '';
-        // emailInput.style.backgroundImage = '';
+        emailInput.style.backgroundImage = '';
     }
 });

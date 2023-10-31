@@ -1,5 +1,6 @@
 # base apparel coming soon page
  Base apparel coming soon page Frontend Mentor challange <br />
+ Site live at: https://piotrplotast.github.io/base-apparel-coming-soon-page/ <br />
  Made with: <br />
  - Semantic HTML markup with BEM
  - CSS
